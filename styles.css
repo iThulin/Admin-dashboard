@@ -40,13 +40,25 @@ h3 {
 }
 
 .logoContainer {
-    background: lightblue;
-    height: 20vh;
+    background: #3D6582;
+    height: fit-content;
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+}
+.logoName {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#logo {
+    color: lightgray;
 }
 
 .nav {
