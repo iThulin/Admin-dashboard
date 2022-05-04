@@ -1,4 +1,7 @@
-html {
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -25,29 +28,18 @@ h3 {
 }
 
 .contentContainer {
-    display: grid;
-    min-height: 100vh;
     height: 100%;
+    width: 100%;
+    display: grid;
     grid-template-columns: clamp(200px, 25%, 300px) 1fr;
-    grid-template-rows: auto auto 1fr auto;
-}
-
-.sidePanel {
-    grid-column-start: 1;
-    height: 100vh;
-    display: flex;
-    position: sticky;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: blue;
-    position: sticky;
-
+    grid-template-rows: 2fr 8fr;
 }
 
 .logoContainer {
+    grid-column-start: 1;
+    grid-row-start: 1;
     background: #3D6582;
-    height: 18vh;
-    max-height: fit-content;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -68,10 +60,12 @@ h3 {
 }
 
 .nav {
+    grid-column-start: 1;
+    grid-row-start: 2;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    height: 100%;
+    height: auto;
     width: auto;
     padding: 10% 0 0 10%;
     background: #3D6582;
@@ -102,12 +96,19 @@ h3 {
     align-self: flex-end;
 }
 
+.dashboard {
+    width: auto;
+    height: 100%;
+}
+
 .header {
+    grid-column-start: 2;
+    grid-row-start: 1;
     width: auto;
     height: 22vh;
     background-color: #ecebeb;
     display: grid;
-    grid-template-rows: 7vh 15vh;
+    grid-template-rows: .75fr 1fr;
 }
 
 .headerUpper {
@@ -146,7 +147,7 @@ h3 {
 .headerLower {
     display: grid;
     grid-row-start: 2;
-    grid-template-columns:  .25fr 100px 3fr 1fr 2.5fr .25fr;
+    grid-template-columns:  .25fr 100px 3fr 2fr 2.25fr .25fr;
 }
 
 .userIconLarge {
@@ -195,6 +196,11 @@ h3 {
 }
 
 .content-grid {
+    grid-column-start: 2;
+    grid-row-start: 2;
     display: grid;
-    grid-template-columns: repeat(2, 40%) repeat(1, 12%);
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(2, 2fr) 1.25fr;
+    grid-template-rows: .25fr repeat(3, 1fr) .25fr;
 }
