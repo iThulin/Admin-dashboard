@@ -24,7 +24,7 @@ h3 {
 }
 
 #navElement {
-    color: #ecebeb;
+    color: #f5f5f5;
 }
 
 .contentContainer {
@@ -32,13 +32,13 @@ h3 {
     width: 100%;
     display: grid;
     grid-template-columns: clamp(200px, 25%, 300px) 1fr;
-    grid-template-rows: 2fr 8fr;
+    grid-template-rows: 1.5fr 8.5fr;
 }
 
 .logoContainer {
     grid-column-start: 1;
     grid-row-start: 1;
-    background: #3D6582;
+    background: #247BA0;
     height: auto;
     width: auto;
     display: flex;
@@ -46,7 +46,7 @@ h3 {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
     gap: 15px;
 }
 .logoName {
@@ -68,8 +68,8 @@ h3 {
     height: auto;
     width: auto;
     padding: 10% 0 0 10%;
-    background: #3D6582;
-    box-shadow: 5px 5px 5px #284255;
+    background: #247BA0;
+    box-shadow: 5px 5px 5px #3D6582;
 }
 
 .navSection {
@@ -106,11 +106,11 @@ h3 {
     grid-column-start: 2;
     grid-row-start: 1;
     width: auto;
-    height: 22vh;
-    background-color: #ecebeb;
+    height: fit-content;
+    background-color: #f5f5f5;
     display: grid;
     grid-template-rows: .5fr 1fr;
-    box-shadow: 5px 5px 5px #284255;
+    box-shadow: 5px 5px 5px #3D6582;
 }
 
 .headerUpper {
@@ -163,12 +163,12 @@ h3 {
     grid-column-start: 2;
     height: 80px;
     width: 80px;
-    margin: auto;
+    margin: 10px;
 }
 
 .userContainer {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
     margin: auto auto auto 10px;
 }
 
@@ -192,16 +192,16 @@ h3 {
     font-size: 1em;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    background: #3D6582;
-    color: #ecebeb;
+    background: #247BA0;
+    color: #f5f5f5;
     border-radius: 20px;
     border: none;
 }
 
 #navButton:hover {
-    background: #ecebeb;
-    color: #3D6582;
-    border: 2px solid #3D6582;
+    background: #f5f5f5;
+    color: #247BA0;
+    border: 2px solid #247BA0;
 }
 
 .content-grid {
@@ -233,9 +233,9 @@ h3 {
 .projectTile {
     height: 87.5%;
     width: 92.5%;
-    background: #ecebeb;
+    background: #f5f5f5;
     margin: 0px auto auto 0px;
-    box-shadow: 5px 5px 5px #3D6582;
+    box-shadow: 5px 5px 5px #247BA0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -276,8 +276,8 @@ h3 {
     height: 33.33%;
     width: 100%;
     margin: auto auto 5% auto;
-    background: #ecebeb;
-    box-shadow: 5px 5px 5px #3D6582;
+    background: #f5f5f5;
+    box-shadow: 5px 5px 5px #247BA0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -305,13 +305,13 @@ h3 {
     height: 20%;
     width: 100%;
     margin: auto;
-    background: #ecebeb;
+    background: #f5f5f5;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 30px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #3D6582;
+    box-shadow: 5px 5px 5px #247BA0;
 }
 
 .trendingTextContainer {
